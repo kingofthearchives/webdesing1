@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - Panuchies</title>
+    <link rel="stylesheet" href="../css/gallery.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="gallery-main">
+      <section class="controls">
+        <div class="filters">
+          <button data-filter="all" class="active">All</button>
+          <button data-filter="food">Food</button>
+          <button data-filter="people">People</button>
+          <button data-filter="interior">Interior</button>
+        </div>
+        <div class="search-wrap">
+          <input id="gallery-search" type="search" placeholder="Search by title..." />
+        </div>
+      </section>
+
+      <section id="gallery-grid" class="grid" aria-live="polite">
+        <!-- JS will populate items here -->
+      </section>
+    </main>
+
+    <script src="../java/grid.js"></script>
+  </body>
+</html>
